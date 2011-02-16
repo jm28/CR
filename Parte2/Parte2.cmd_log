@@ -1,0 +1,27 @@
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Parte2.ngc Parte2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Parte2_map.ncd Parte2.ngd Parte2.pcf 
+par -w -intstyle ise -ol high -t 1 Parte2_map.ncd Parte2.ncd Parte2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Parte2.twx Parte2.ncd -o Parte2.twr Parte2.pcf 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Parte2.ngc Parte2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Parte2_map.ncd Parte2.ngd Parte2.pcf 
+par -w -intstyle ise -ol high -t 1 Parte2_map.ncd Parte2.ncd Parte2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Parte2.twx Parte2.ncd -o Parte2.twr Parte2.pcf 
+bitgen -intstyle ise -f Parte2.ut Parte2.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte2/Parte2.xst" -ofn "C:/Users/rafa/Parte2/Parte2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Parte2.ngc Parte2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Parte2_map.ncd Parte2.ngd Parte2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Parte2.ngc Parte2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Parte2_map.ncd Parte2.ngd Parte2.pcf 
+par -w -intstyle ise -ol high -t 1 Parte2_map.ncd Parte2.ncd Parte2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Parte2.twx Parte2.ncd -o Parte2.twr Parte2.pcf 
+bitgen -intstyle ise -f Parte2.ut Parte2.ncd 

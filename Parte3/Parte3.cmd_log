@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/rafa/Parte3/Parte3.xst" -ofn "C:/Users/rafa/Parte3/Parte3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Parte3.ngc Parte3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Parte3_map.ncd Parte3.ngd Parte3.pcf 
+par -w -intstyle ise -ol high -t 1 Parte3_map.ncd Parte3.ncd Parte3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Parte3.twx Parte3.ncd -o Parte3.twr Parte3.pcf 
+bitgen -intstyle ise -f Parte3.ut Parte3.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Parte3/Parte3.xst" -ofn "C:/Users/rafa/Parte3/Parte3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Parte3.ngc Parte3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Parte3_map.ncd Parte3.ngd Parte3.pcf 
+par -w -intstyle ise -ol high -t 1 Parte3_map.ncd Parte3.ncd Parte3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Parte3.twx Parte3.ncd -o Parte3.twr Parte3.pcf 
+bitgen -intstyle ise -f Parte3.ut Parte3.ncd 

@@ -1,0 +1,31 @@
+Command line:
+   Parte3_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  10067
+
+Wed Feb 16 16:38:48 2011
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 493.699 Meg
+
+ Total Signals          : 4
+ Total Nets             : 4
+ Total Signal Drivers   : 1
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 364
+Total Line Count : 1
+Total Line Count : 1
+Total Line Count : 1
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 493.699 Meg
+
+Wed Feb 16 16:41:40 2011
+

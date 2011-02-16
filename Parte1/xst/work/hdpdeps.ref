@@ -1,0 +1,6 @@
+V3 3
+FL C:/Users/rafa/Parte1/Parte1.vhd 2011/02/16.15:12:25 M.81d
+EN work/Parte1 1297869205 FL C:/Users/rafa/Parte1/Parte1.vhd \
+      PB ieee/std_logic_1164 1290154108
+AR work/Parte1/Behavioral 1297869206 \
+      FL C:/Users/rafa/Parte1/Parte1.vhd EN work/Parte1 1297869205

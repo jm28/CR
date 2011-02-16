@@ -1,0 +1,3 @@
+NET "input0" LOC=G18;
+NET "input1" LOC=H18;
+NET "output" LOC=J14;

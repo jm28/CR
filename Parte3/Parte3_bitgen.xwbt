@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\rafa\Parte3\Parte3.ncd
+OUTFILE=C:\Users\rafa\Parte3\Parte3.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\rafa\Parte3
+LICENSE=WebPack
+USER_INFO=0_0_033
