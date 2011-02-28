@@ -1,0 +1,16 @@
+NET "inValue(0)" LOC=G18;
+NET "inValue(1)" LOC=H18;
+NET "inValue(2)" LOC=K18;
+NET "inValue(3)" LOC=K17;
+NET "clkEnable" LOC=R17;
+NET "upDown_n" LOC=N17;
+NET "reset" LOC=H13;
+NET "load_n" LOC=E18;
+NET "clk" LOC=B8;
+NET "outValue(0)" LOC=L18;
+NET "outValue(1)" LOC=F18;
+NET "outValue(2)" LOC=D17;
+NET "outValue(3)" LOC=D16;
+NET "outValue(4)" LOC=G14;
+NET "outValue(5)" LOC=J17;
+NET "outValue(6)" LOC=H14;

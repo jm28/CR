@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml aula2_parte5.twx aula2_parte5.ncd -o aula2_parte5.twr
+aula2_parte5.pcf
+
+Design file:              aula2_parte5.ncd
+Physical constraint file: aula2_parte5.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2010-11-18)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+addsub         |encodeOut<0>   |   12.260|
+addsub         |encodeOut<1>   |   11.976|
+addsub         |encodeOut<2>   |   12.010|
+addsub         |encodeOut<3>   |   11.438|
+addsub         |encodeOut<4>   |   11.988|
+addsub         |encodeOut<5>   |   11.719|
+addsub         |encodeOut<6>   |   11.150|
+addsub         |overflow       |   10.336|
+addsub         |zero           |    9.739|
+operand0<0>    |encodeOut<0>   |   11.966|
+operand0<0>    |encodeOut<1>   |   11.682|
+operand0<0>    |encodeOut<2>   |   11.716|
+operand0<0>    |encodeOut<3>   |   11.144|
+operand0<0>    |encodeOut<4>   |   11.694|
+operand0<0>    |encodeOut<5>   |   11.425|
+operand0<0>    |encodeOut<6>   |   10.856|
+operand0<0>    |overflow       |   10.042|
+operand0<0>    |zero           |    9.445|
+operand0<1>    |encodeOut<0>   |   10.556|
+operand0<1>    |encodeOut<1>   |   10.272|
+operand0<1>    |encodeOut<2>   |   10.306|
+operand0<1>    |encodeOut<3>   |    9.734|
+operand0<1>    |encodeOut<4>   |   10.284|
+operand0<1>    |encodeOut<5>   |   10.015|
+operand0<1>    |encodeOut<6>   |    9.446|
+operand0<1>    |overflow       |    8.632|
+operand0<1>    |zero           |    8.035|
+operand0<2>    |encodeOut<0>   |    9.808|
+operand0<2>    |encodeOut<1>   |    9.524|
+operand0<2>    |encodeOut<2>   |    9.558|
+operand0<2>    |encodeOut<3>   |    8.986|
+operand0<2>    |encodeOut<4>   |    9.536|
+operand0<2>    |encodeOut<5>   |    9.267|
+operand0<2>    |encodeOut<6>   |    8.698|
+operand0<2>    |overflow       |    7.884|
+operand0<2>    |zero           |    7.287|
+operand0<3>    |encodeOut<0>   |    8.380|
+operand0<3>    |encodeOut<1>   |    8.096|
+operand0<3>    |encodeOut<2>   |    8.130|
+operand0<3>    |encodeOut<3>   |    7.558|
+operand0<3>    |encodeOut<4>   |    8.108|
+operand0<3>    |encodeOut<5>   |    7.839|
+operand0<3>    |encodeOut<6>   |    7.270|
+operand0<3>    |overflow       |    7.288|
+operand0<3>    |zero           |    6.751|
+operand1<0>    |encodeOut<0>   |   11.725|
+operand1<0>    |encodeOut<1>   |   11.441|
+operand1<0>    |encodeOut<2>   |   11.475|
+operand1<0>    |encodeOut<3>   |   10.903|
+operand1<0>    |encodeOut<4>   |   11.453|
+operand1<0>    |encodeOut<5>   |   11.184|
+operand1<0>    |encodeOut<6>   |   10.615|
+operand1<0>    |overflow       |    9.801|
+operand1<0>    |zero           |    9.204|
+operand1<1>    |encodeOut<0>   |   10.534|
+operand1<1>    |encodeOut<1>   |   10.250|
+operand1<1>    |encodeOut<2>   |   10.284|
+operand1<1>    |encodeOut<3>   |    9.712|
+operand1<1>    |encodeOut<4>   |   10.262|
+operand1<1>    |encodeOut<5>   |    9.993|
+operand1<1>    |encodeOut<6>   |    9.424|
+operand1<1>    |overflow       |    8.610|
+operand1<1>    |zero           |    8.013|
+operand1<2>    |encodeOut<0>   |   10.333|
+operand1<2>    |encodeOut<1>   |   10.049|
+operand1<2>    |encodeOut<2>   |   10.083|
+operand1<2>    |encodeOut<3>   |    9.511|
+operand1<2>    |encodeOut<4>   |   10.061|
+operand1<2>    |encodeOut<5>   |    9.792|
+operand1<2>    |encodeOut<6>   |    9.223|
+operand1<2>    |overflow       |    8.409|
+operand1<2>    |zero           |    7.812|
+operand1<3>    |encodeOut<0>   |    7.872|
+operand1<3>    |encodeOut<1>   |    7.588|
+operand1<3>    |encodeOut<2>   |    7.622|
+operand1<3>    |encodeOut<3>   |    7.050|
+operand1<3>    |encodeOut<4>   |    7.600|
+operand1<3>    |encodeOut<5>   |    7.331|
+operand1<3>    |encodeOut<6>   |    6.762|
+operand1<3>    |overflow       |    6.587|
+operand1<3>    |zero           |    5.985|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Feb 21 14:09:27 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 154 MB
+
+
+

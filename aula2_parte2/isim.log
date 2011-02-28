@@ -1,0 +1,229 @@
+ISim log file
+Running: C:\Users\rafa\aula2_parte2\aula2_parte2tb_isim_beh.exe -gui -tclbatch isim.cmd -wdb C:/Users/rafa/aula2_parte2/aula2_parte2tb_isim_beh.wdb 
+ISim M.81d (signature 0x12940baa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+# run all
+# run all
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# step
+# step
+# step
+# step
+# step
+# restart
+# step
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 73
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Finished circuit initialization process.
+Stopped at time : 100 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 75
+# step
+Stopped at time : 100 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 76
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 78
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 79
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 81
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 82
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 84
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 85
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 500 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 87
+# step
+# step
+# step
+# step
+# restart
+# step
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 73
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Finished circuit initialization process.
+Stopped at time : 100 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 75
+# step
+Stopped at time : 100 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 76
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 78
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 79
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 81
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 82
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 84
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 85
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 500 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 87
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# step
+# run all
+# run all
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# step
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 73
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Finished circuit initialization process.
+Stopped at time : 100 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 75
+# step
+Stopped at time : 100 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 76
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 78
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 79
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 200 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 81
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 82
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 300 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 42
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 84
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 85
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 44
+# step
+Stopped at time : 400 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2.vhd" Line 43
+# step
+Stopped at time : 500 ns : File "C:/Users/rafa/aula2_parte2/aula2_parte2tb.vhd" Line 87
+# step

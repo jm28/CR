@@ -1,0 +1,9 @@
+NET "dataIn(0)"  LOC=G18;
+NET "dataIn(1)"  LOC=H18;
+NET "dataIn(2)"  LOC=K18;
+NET "clk"		  LOC=B8;
+NET "clkEnable"  LOC=R17;
+NET "reset_n"    LOC=B18;
+NET "dataOut(0)" LOC=J14;
+NET "dataOut(1)" LOC=J15;
+NET "dataOut(2)" LOC=K15;

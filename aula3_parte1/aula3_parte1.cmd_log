@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "C:/Users/rafa/aula3_parte1/aula3_parte1.xst" -ofn "C:/Users/rafa/aula3_parte1/aula3_parte1.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/aula3_parte1/aula3_parte1.xst" -ofn "C:/Users/rafa/aula3_parte1/aula3_parte1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 aula3_parte1.ngc aula3_parte1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aula3_parte1_map.ncd aula3_parte1.ngd aula3_parte1.pcf 
+par -w -intstyle ise -ol high -t 1 aula3_parte1_map.ncd aula3_parte1.ncd aula3_parte1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aula3_parte1.twx aula3_parte1.ncd -o aula3_parte1.twr aula3_parte1.pcf 
+bitgen -intstyle ise -f aula3_parte1.ut aula3_parte1.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/aula3_parte1/aula3_parte1.xst" -ofn "C:/Users/rafa/aula3_parte1/aula3_parte1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 aula3_parte1.ngc aula3_parte1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aula3_parte1_map.ncd aula3_parte1.ngd aula3_parte1.pcf 
+par -w -intstyle ise -ol high -t 1 aula3_parte1_map.ncd aula3_parte1.ncd aula3_parte1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aula3_parte1.twx aula3_parte1.ncd -o aula3_parte1.twr aula3_parte1.pcf 
+bitgen -intstyle ise -f aula3_parte1.ut aula3_parte1.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/aula3_parte1/aula3_parte1.xst" -ofn "C:/Users/rafa/aula3_parte1/aula3_parte1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aula3_parte1.ucf -p xc3s500e-fg320-4 aula3_parte1.ngc aula3_parte1.ngd  
+xst -intstyle ise -ifn "C:/Users/rafa/aula3_parte1/aula3_parte1.xst" -ofn "C:/Users/rafa/aula3_parte1/aula3_parte1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aula3_parte1.ucf -p xc3s500e-fg320-4 aula3_parte1.ngc aula3_parte1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aula3_parte1_map.ncd aula3_parte1.ngd aula3_parte1.pcf 
+par -w -intstyle ise -ol high -t 1 aula3_parte1_map.ncd aula3_parte1.ncd aula3_parte1.pcf 
+xst -intstyle ise -ifn "C:/Users/rafa/aula3_parte1/aula3_parte1.xst" -ofn "C:/Users/rafa/aula3_parte1/aula3_parte1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aula3_parte1.ucf -p xc3s500e-fg320-4 aula3_parte1.ngc aula3_parte1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aula3_parte1_map.ncd aula3_parte1.ngd aula3_parte1.pcf 
+par -w -intstyle ise -ol high -t 1 aula3_parte1_map.ncd aula3_parte1.ncd aula3_parte1.pcf 
+xst -intstyle ise -ifn "C:/Users/rafa/aula3_parte1/aula3_parte1.xst" -ofn "C:/Users/rafa/aula3_parte1/aula3_parte1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aula3_parte1.ucf -p xc3s500e-fg320-4 aula3_parte1.ngc aula3_parte1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aula3_parte1_map.ncd aula3_parte1.ngd aula3_parte1.pcf 
+par -w -intstyle ise -ol high -t 1 aula3_parte1_map.ncd aula3_parte1.ncd aula3_parte1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aula3_parte1.twx aula3_parte1.ncd -o aula3_parte1.twr aula3_parte1.pcf -ucf aula3_parte1.ucf 
+bitgen -intstyle ise -f aula3_parte1.ut aula3_parte1.ncd 

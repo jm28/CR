@@ -1,0 +1,21 @@
+Running: C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/rafa/aula2_parte3/aula2_parte3tb_isim_beh.exe -prj C:/Users/rafa/aula2_parte3/aula2_parte3tb_beh.prj work.aula2_parte3tb 
+ISim M.81d (signature 0x12940baa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/rafa/aula2_parte3/aula2_parte3.vhd" into library work
+Parsing VHDL file "C:/Users/rafa/aula2_parte3/aula2_parte3tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Compiling architecture func of entity xorgate [xorgate_default]
+Compiling architecture func of entity full_adder [full_adder_default]
+Compiling architecture struct of entity aula2_parte3 [aula2_parte3_default]
+Compiling architecture behavior of entity aula2_parte3tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 9 VHDL Units
+Built simulation executable C:/Users/rafa/aula2_parte3/aula2_parte3tb_isim_beh.exe
+Fuse Memory Usage: 16788 KB
+Fuse CPU Usage: 280 ms

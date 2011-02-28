@@ -1,0 +1,10 @@
+Command line:
+   aula2_parte3tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1844
+
+Mon Feb 21 14:18:50 2011
+
+
+ Elaboration Time: 0.0312 sec

@@ -1,0 +1,35 @@
+Command line:
+   aula2_parte2tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1038
+
+Sat Feb 19 17:44:47 2011
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 496.82 Meg
+
+ Total Signals          : 6
+ Total Nets             : 7
+ Total Signal Drivers   : 4
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 367
+Total Line Count : 13
+Total Line Count : 13
+Total Line Count : 13
+Total Line Count : 13
+Total Line Count : 13
+Total Line Count : 13
+Total Line Count : 13
+
+ Total Simulation Time: 0.436802 sec
+
+ Current Memory Usage: 496.82 Meg
+
+Sat Feb 19 17:48:46 2011
+

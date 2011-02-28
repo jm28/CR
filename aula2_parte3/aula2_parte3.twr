@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml aula2_parte3.twx aula2_parte3.ncd -o aula2_parte3.twr
+aula2_parte3.pcf
+
+Design file:              aula2_parte3.ncd
+Physical constraint file: aula2_parte3.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2010-11-18)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+addsub         |overflow       |   10.597|
+addsub         |result<1>      |    8.193|
+addsub         |result<2>      |    9.173|
+addsub         |result<3>      |    9.691|
+addsub         |zero           |   10.871|
+operand0<0>    |overflow       |    9.824|
+operand0<0>    |result<0>      |    6.850|
+operand0<0>    |result<1>      |    7.422|
+operand0<0>    |result<2>      |    8.400|
+operand0<0>    |result<3>      |    8.918|
+operand0<0>    |zero           |   10.098|
+operand0<1>    |overflow       |    9.165|
+operand0<1>    |result<1>      |    6.574|
+operand0<1>    |result<2>      |    7.741|
+operand0<1>    |result<3>      |    8.259|
+operand0<1>    |zero           |    9.439|
+operand0<2>    |overflow       |    7.881|
+operand0<2>    |result<2>      |    6.956|
+operand0<2>    |result<3>      |    6.975|
+operand0<2>    |zero           |    8.155|
+operand0<3>    |overflow       |    7.040|
+operand0<3>    |result<3>      |    7.050|
+operand0<3>    |zero           |    7.576|
+operand1<0>    |overflow       |    9.978|
+operand1<0>    |result<0>      |    6.490|
+operand1<0>    |result<1>      |    7.576|
+operand1<0>    |result<2>      |    8.554|
+operand1<0>    |result<3>      |    9.072|
+operand1<0>    |zero           |   10.252|
+operand1<1>    |overflow       |    8.787|
+operand1<1>    |result<1>      |    6.181|
+operand1<1>    |result<2>      |    7.363|
+operand1<1>    |result<3>      |    7.881|
+operand1<1>    |zero           |    9.061|
+operand1<2>    |overflow       |    7.719|
+operand1<2>    |result<2>      |    6.542|
+operand1<2>    |result<3>      |    6.813|
+operand1<2>    |zero           |    7.993|
+operand1<3>    |overflow       |    6.966|
+operand1<3>    |result<3>      |    6.363|
+operand1<3>    |zero           |    6.765|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Feb 21 14:16:29 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 154 MB
+
+
+

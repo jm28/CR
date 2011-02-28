@@ -1,0 +1,15 @@
+V3 9
+FL C:/Users/rafa/aula2_parte3/aula2_parte3.vhd 2011/02/19.20:49:54 M.81d
+EN work/xorGate 1298297762 FL C:/Users/rafa/aula2_parte3/aula2_parte3.vhd \
+      PB ieee/std_logic_1164 1290154108
+AR work/xorGate/func 1298297763 \
+      FL C:/Users/rafa/aula2_parte3/aula2_parte3.vhd EN work/xorGate 1298297762
+EN work/Full_Adder 1298297764 \
+      FL C:/Users/rafa/aula2_parte3/aula2_parte3.vhd PB ieee/std_logic_1164 1290154108
+AR work/Full_Adder/func 1298297765 \
+      FL C:/Users/rafa/aula2_parte3/aula2_parte3.vhd EN work/Full_Adder 1298297764
+EN work/aula2_parte3 1298297766 \
+      FL C:/Users/rafa/aula2_parte3/aula2_parte3.vhd PB ieee/std_logic_1164 1290154108
+AR work/aula2_parte3/struct 1298297767 \
+      FL C:/Users/rafa/aula2_parte3/aula2_parte3.vhd EN work/aula2_parte3 1298297766 \
+      CP xorGate CP Full_Adder
