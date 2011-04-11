@@ -1,0 +1,9 @@
+NET "writeEnable" LOC = "B18";
+NET "writeData(0)" LOC = "G18";
+NET "writeData(1)" LOC = "H18";
+NET "address(0)" LOC = "K18";
+NET "address(1)" LOC = "K17";
+NET "address(2)" LOC = "L14";
+NET "writeClk" LOC = "B8";
+NET "readData(0)" LOC = "J14";
+NET "readData(1)" LOC = "J15";

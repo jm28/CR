@@ -1,0 +1,199 @@
+ISim log file
+Running: C:\Users\rafa\Desktop\MIPSSCycAddCy\MIPSTestBench_isim_beh.exe -gui -tclbatch isim.cmd -wdb C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTestBench_isim_beh.wdb 
+ISim M.81d (signature 0x12940baa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /mipstestbench/uut/pc4_adder/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /mipstestbench/uut/inst_memory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /mipstestbench/uut/reg_bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /mipstestbench/uut/reg_bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+# run all
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 39
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 42
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 43
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 45
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 47
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 48
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 49
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/Mux2N.vhd" Line 28
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/LeftShifter2.vhd" Line 25
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 84
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 86
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 85
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 34
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/Mux2N.vhd" Line 28
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 84
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 86
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 85
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 42
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 43
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 45
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 47
+# step
+Stopped at time : 7842710 ns : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 48
+# restart
+# restart
+# restart
+# restart
+# restart
+# restart
+# restart
+# step
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTestBench.vhd" Line 42
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTestBench.vhd" Line 43
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTestBench.vhd" Line 50
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTestBench.vhd" Line 51
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTopLevel.vhd" Line 41
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTopLevel.vhd" Line 118
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegN.vhd" Line 33
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 34
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 35
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 37
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 39
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 40
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ROM_AR.vhd" Line 43
+# step
+at 0 ps, Instance /mipstestbench/uut/inst_memory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 38
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 156
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 157
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 158
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 159
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 160
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 161
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 162
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/Mux2N.vhd" Line 28
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegBank32_32.vhd" Line 41
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegBank32_32.vhd" Line 49
+# step
+at 0 ps, Instance /mipstestbench/uut/reg_bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegBank32_32.vhd" Line 53
+# step
+at 0 ps, Instance /mipstestbench/uut/reg_bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/SignExt.vhd" Line 25
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/SignExt.vhd" Line 26
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/Mux2N.vhd" Line 28
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 42
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 43
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 45
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 79
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 80
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 84
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 85
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ALU32.vhd" Line 86
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/LeftShifter2.vhd" Line 25
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 34
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 35
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 37
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 39
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 40
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AndGate2.vhd" Line 26
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/Mux2N.vhd" Line 28
+# step
+Finished circuit initialization process.
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/MIPSTopLevel.vhd" Line 118
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegN.vhd" Line 33
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegBank32_32.vhd" Line 41
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 37
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 40
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/AdderN.vhd" Line 39
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 38
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 40
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 42
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 43
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 66
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 67
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 68
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 69
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/ControlUnit.vhd" Line 70
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegBank32_32.vhd" Line 49
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/Mux2N.vhd" Line 28
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/RegBank32_32.vhd" Line 53
+# step
+Stopped at time : 0 fs : File "C:/Users/rafa/Desktop/MIPSSCycAddCy/SignExt.vhd" Line 25

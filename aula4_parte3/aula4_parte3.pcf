@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map M.81d on Mon Mar 14 14:18:34 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "readData<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "readData<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "address<0>" LOCATE = SITE "K18" LEVEL 1;
+COMP "address<1>" LOCATE = SITE "K17" LEVEL 1;
+COMP "address<2>" LOCATE = SITE "L14" LEVEL 1;
+COMP "writeEnable" LOCATE = SITE "B18" LEVEL 1;
+COMP "writeClk" LOCATE = SITE "B8" LEVEL 1;
+COMP "writeData<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "writeData<1>" LOCATE = SITE "H18" LEVEL 1;
+NET "writeClk_BUFGP/IBUFG" BEL "writeClk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

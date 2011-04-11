@@ -1,0 +1,482 @@
+Release 12.4 - xst M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: aula4_parte2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "aula4_parte2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "aula4_parte2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : aula4_parte2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/rafa/Downloads/ClkDivider50M.vhd" in Library work.
+Architecture rtl of Entity clkdivider50m is up to date.
+Compiling vhdl file "C:/Users/rafa/CR/aula4_parte2/aula4_parte2.vhd" in Library work.
+Entity <aula4_parte2> compiled.
+Entity <aula4_parte2> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <aula4_parte2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ClkDivider50M> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <aula4_parte2> in library <work> (Architecture <behavioral>).
+Entity <aula4_parte2> analyzed. Unit <aula4_parte2> generated.
+
+Analyzing Entity <ClkDivider50M> in library <work> (Architecture <rtl>).
+Entity <ClkDivider50M> analyzed. Unit <ClkDivider50M> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ClkDivider50M>.
+    Related source file is "C:/Users/rafa/Downloads/ClkDivider50M.vhd".
+    Found 1-bit register for signal <s_clkOut>.
+    Found 27-bit up counter for signal <s_divCounter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <ClkDivider50M> synthesized.
+
+
+Synthesizing Unit <aula4_parte2>.
+    Related source file is "C:/Users/rafa/CR/aula4_parte2/aula4_parte2.vhd".
+    Found finite state machine <FSM_0> for signal <s_currentState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | s_clk1Hz                  (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st_idle                                        |
+    | Power Up State     | st_even                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <aula4_parte2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <s_currentState/FSM> on signal <s_currentState[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ st_even   | 00
+ st_odd    | 01
+ st_idle   | 10
+ st_parity | 11
+-----------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <aula4_parte2> ...
+
+Optimizing unit <ClkDivider50M> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block aula4_parte2, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : aula4_parte2.ngr
+Top Level Output File Name         : aula4_parte2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 6
+
+Cell Usage :
+# BELS                             : 134
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 26
+#      LUT2                        : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 3
+#      LUT4                        : 38
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXCY                       : 31
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 30
+#      FDC                         : 29
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 4
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       40  out of   4656     0%  
+ Number of Slice Flip Flops:             30  out of   9312     0%  
+ Number of 4 input LUTs:                 73  out of   9312     0%  
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    232     2%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+clk_div_inst/s_clkOut              | NONE(s_currentState_FSM_FFd1)| 2     |
+clk                                | BUFGP                        | 28    |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 30    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.037ns (Maximum Frequency: 165.645MHz)
+   Minimum input arrival time before clock: 3.257ns
+   Maximum output required time after clock: 5.609ns
+   Maximum combinational path delay: 6.320ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div_inst/s_clkOut'
+  Clock period: 2.686ns (frequency: 372.301MHz)
+  Total number of paths / destination ports: 5 / 2
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 2)
+  Source:            s_currentState_FSM_FFd1 (FF)
+  Destination:       s_currentState_FSM_FFd2 (FF)
+  Source Clock:      clk_div_inst/s_clkOut rising
+  Destination Clock: clk_div_inst/s_clkOut rising
+
+  Data Path: s_currentState_FSM_FFd1 to s_currentState_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              4   0.591   0.762  s_currentState_FSM_FFd1 (s_currentState_FSM_FFd1)
+     LUT4:I0->O            1   0.704   0.000  s_currentState_FSM_FFd2-In_F (N11)
+     MUXF5:I0->O           1   0.321   0.000  s_currentState_FSM_FFd2-In (s_currentState_FSM_FFd2-In)
+     FDC:D                     0.308          s_currentState_FSM_FFd2
+    ----------------------------------------
+    Total                      2.686ns (1.924ns logic, 0.762ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.037ns (frequency: 165.645MHz)
+  Total number of paths / destination ports: 1144 / 28
+-------------------------------------------------------------------------
+Delay:               6.037ns (Levels of Logic = 28)
+  Source:            clk_div_inst/s_divCounter_1 (FF)
+  Destination:       clk_div_inst/s_divCounter_26 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_div_inst/s_divCounter_1 to clk_div_inst/s_divCounter_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  clk_div_inst/s_divCounter_1 (clk_div_inst/s_divCounter_1)
+     LUT1:I0->O            1   0.704   0.000  clk_div_inst/Mcount_s_divCounter_cy<1>_rt (clk_div_inst/Mcount_s_divCounter_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  clk_div_inst/Mcount_s_divCounter_cy<1> (clk_div_inst/Mcount_s_divCounter_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<2> (clk_div_inst/Mcount_s_divCounter_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<3> (clk_div_inst/Mcount_s_divCounter_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<4> (clk_div_inst/Mcount_s_divCounter_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<5> (clk_div_inst/Mcount_s_divCounter_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<6> (clk_div_inst/Mcount_s_divCounter_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<7> (clk_div_inst/Mcount_s_divCounter_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<8> (clk_div_inst/Mcount_s_divCounter_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<9> (clk_div_inst/Mcount_s_divCounter_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<10> (clk_div_inst/Mcount_s_divCounter_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<11> (clk_div_inst/Mcount_s_divCounter_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<12> (clk_div_inst/Mcount_s_divCounter_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<13> (clk_div_inst/Mcount_s_divCounter_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<14> (clk_div_inst/Mcount_s_divCounter_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<15> (clk_div_inst/Mcount_s_divCounter_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<16> (clk_div_inst/Mcount_s_divCounter_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<17> (clk_div_inst/Mcount_s_divCounter_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<18> (clk_div_inst/Mcount_s_divCounter_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<19> (clk_div_inst/Mcount_s_divCounter_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<20> (clk_div_inst/Mcount_s_divCounter_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<21> (clk_div_inst/Mcount_s_divCounter_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<22> (clk_div_inst/Mcount_s_divCounter_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<23> (clk_div_inst/Mcount_s_divCounter_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<24> (clk_div_inst/Mcount_s_divCounter_cy<24>)
+     MUXCY:CI->O           0   0.059   0.000  clk_div_inst/Mcount_s_divCounter_cy<25> (clk_div_inst/Mcount_s_divCounter_cy<25>)
+     XORCY:CI->O           1   0.804   0.424  clk_div_inst/Mcount_s_divCounter_xor<26> (clk_div_inst/Result<26>)
+     LUT4:I3->O            1   0.704   0.000  clk_div_inst/Mcount_s_divCounter_eqn_261 (clk_div_inst/Mcount_s_divCounter_eqn_26)
+     FDC:D                     0.308          clk_div_inst/s_divCounter_26
+    ----------------------------------------
+    Total                      6.037ns (4.991ns logic, 1.046ns route)
+                                       (82.7% logic, 17.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div_inst/s_clkOut'
+  Total number of paths / destination ports: 7 / 2
+-------------------------------------------------------------------------
+Offset:              3.257ns (Levels of Logic = 3)
+  Source:            inputBit (PAD)
+  Destination:       s_currentState_FSM_FFd2 (FF)
+  Destination Clock: clk_div_inst/s_clkOut rising
+
+  Data Path: inputBit to s_currentState_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  inputBit_IBUF (inputBit_IBUF)
+     LUT3:I0->O            1   0.704   0.000  s_currentState_FSM_FFd2-In_G (N12)
+     MUXF5:I1->O           1   0.321   0.000  s_currentState_FSM_FFd2-In (s_currentState_FSM_FFd2-In)
+     FDC:D                     0.308          s_currentState_FSM_FFd2
+    ----------------------------------------
+    Total                      3.257ns (2.551ns logic, 0.706ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div_inst/s_clkOut'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.609ns (Levels of Logic = 2)
+  Source:            s_currentState_FSM_FFd1 (FF)
+  Destination:       parError (PAD)
+  Source Clock:      clk_div_inst/s_clkOut rising
+
+  Data Path: s_currentState_FSM_FFd1 to parError
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              4   0.591   0.622  s_currentState_FSM_FFd1 (s_currentState_FSM_FFd1)
+     LUT4:I2->O            1   0.704   0.420  parError1 (parError_OBUF)
+     OBUF:I->O                 3.272          parError_OBUF (parError)
+    ----------------------------------------
+    Total                      5.609ns (4.567ns logic, 1.042ns route)
+                                       (81.4% logic, 18.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               6.320ns (Levels of Logic = 3)
+  Source:            inputBit (PAD)
+  Destination:       parError (PAD)
+
+  Data Path: inputBit to parError
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  inputBit_IBUF (inputBit_IBUF)
+     LUT4:I0->O            1   0.704   0.420  parError1 (parError_OBUF)
+     OBUF:I->O                 3.272          parError_OBUF (parError)
+    ----------------------------------------
+    Total                      6.320ns (5.194ns logic, 1.126ns route)
+                                       (82.2% logic, 17.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.94 secs
+ 
+--> 
+
+Total memory usage is 203632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,8 @@
+//! **************************************************************************
+// Written by: Map M.81d on Mon Mar 14 00:43:02 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "writeClk_BUFGP/IBUFG" BEL "writeClk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

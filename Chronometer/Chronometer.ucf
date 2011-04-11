@@ -1,0 +1,18 @@
+NET "clk"       LOC = "B8";
+
+NET "reset"     LOC = "B18";
+NET "statop"	LOC = "D18";
+NET "laprst"	LOC = "E18";
+
+NET "dispOut_n<0>" LOC = "L18";
+NET "dispOut_n<1>" LOC = "F18";
+NET "dispOut_n<2>" LOC = "D17";
+NET "dispOut_n<3>" LOC = "D16";
+NET "dispOut_n<4>" LOC = "G14";
+NET "dispOut_n<5>" LOC = "J17";
+NET "dispOut_n<6>" LOC = "H14";
+
+NET "dispEnb_n<0>" LOC = "F17";
+NET "dispEnb_n<1>" LOC = "H17";
+NET "dispEnb_n<2>" LOC = "C18";
+NET "dispEnb_n<3>" LOC = "F15";

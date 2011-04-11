@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/rafa/CR/aula4_parte3/aula4_parte3.xst" -ofn "C:/Users/rafa/CR/aula4_parte3/aula4_parte3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aula4_parte3.ucf -p xc3s500e-fg320-4 aula4_parte3.ngc aula4_parte3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o aula4_parte3_map.ncd aula4_parte3.ngd aula4_parte3.pcf 
+par -w -intstyle ise -ol high -t 1 aula4_parte3_map.ncd aula4_parte3.ncd aula4_parte3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aula4_parte3.twx aula4_parte3.ncd -o aula4_parte3.twr aula4_parte3.pcf -ucf aula4_parte3.ucf 
+bitgen -intstyle ise -f aula4_parte3.ut aula4_parte3.ncd 

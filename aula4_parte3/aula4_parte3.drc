@@ -1,0 +1,8 @@
+Release 12.4 Drc M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Mon Mar 14 14:19:01 2011
+
+drc -z aula4_parte3.ncd aula4_parte3.pcf
+
+DRC detected 0 errors and 0 warnings.

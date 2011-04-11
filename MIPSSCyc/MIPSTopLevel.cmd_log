@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPSSCyc.ucf -p xc3s500e-fg320-4 MIPSTopLevel.ngc MIPSTopLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPSTopLevel_map.ncd MIPSTopLevel.ngd MIPSTopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 MIPSTopLevel_map.ncd MIPSTopLevel.ncd MIPSTopLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPSTopLevel.twx MIPSTopLevel.ncd -o MIPSTopLevel.twr MIPSTopLevel.pcf -ucf MIPSSCyc.ucf 
+bitgen -intstyle ise -f MIPSTopLevel.ut MIPSTopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPSSCyc.ucf -p xc3s500e-fg320-4 MIPSTopLevel.ngc MIPSTopLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPSTopLevel_map.ncd MIPSTopLevel.ngd MIPSTopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 MIPSTopLevel_map.ncd MIPSTopLevel.ncd MIPSTopLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPSTopLevel.twx MIPSTopLevel.ncd -o MIPSTopLevel.twr MIPSTopLevel.pcf -ucf MIPSSCyc.ucf 
+bitgen -intstyle ise -f MIPSTopLevel.ut MIPSTopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPSSCyc.ucf -p xc3s500e-fg320-4 MIPSTopLevel.ngc MIPSTopLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPSTopLevel_map.ncd MIPSTopLevel.ngd MIPSTopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 MIPSTopLevel_map.ncd MIPSTopLevel.ncd MIPSTopLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPSTopLevel.twx MIPSTopLevel.ncd -o MIPSTopLevel.twr MIPSTopLevel.pcf -ucf MIPSSCyc.ucf 
+bitgen -intstyle ise -f MIPSTopLevel.ut MIPSTopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPSSCyc.ucf -p xc3s500e-fg320-4 MIPSTopLevel.ngc MIPSTopLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPSTopLevel_map.ncd MIPSTopLevel.ngd MIPSTopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 MIPSTopLevel_map.ncd MIPSTopLevel.ncd MIPSTopLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPSTopLevel.twx MIPSTopLevel.ncd -o MIPSTopLevel.twr MIPSTopLevel.pcf -ucf MIPSSCyc.ucf 
+bitgen -intstyle ise -f MIPSTopLevel.ut MIPSTopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPSSCyc.ucf -p xc3s500e-fg320-4 MIPSTopLevel.ngc MIPSTopLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPSTopLevel_map.ncd MIPSTopLevel.ngd MIPSTopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 MIPSTopLevel_map.ncd MIPSTopLevel.ncd MIPSTopLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPSTopLevel.twx MIPSTopLevel.ncd -o MIPSTopLevel.twr MIPSTopLevel.pcf -ucf MIPSSCyc.ucf 
+bitgen -intstyle ise -f MIPSTopLevel.ut MIPSTopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPSSCyc.ucf -p xc3s500e-fg320-4 MIPSTopLevel.ngc MIPSTopLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPSTopLevel_map.ncd MIPSTopLevel.ngd MIPSTopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 MIPSTopLevel_map.ncd MIPSTopLevel.ncd MIPSTopLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPSTopLevel.twx MIPSTopLevel.ncd -o MIPSTopLevel.twr MIPSTopLevel.pcf -ucf MIPSSCyc.ucf 
+bitgen -intstyle ise -f MIPSTopLevel.ut MIPSTopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPSSCyc.ucf -p xc3s500e-fg320-4 MIPSTopLevel.ngc MIPSTopLevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPSTopLevel_map.ncd MIPSTopLevel.ngd MIPSTopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 MIPSTopLevel_map.ncd MIPSTopLevel.ncd MIPSTopLevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MIPSTopLevel.twx MIPSTopLevel.ncd -o MIPSTopLevel.twr MIPSTopLevel.pcf -ucf MIPSSCyc.ucf 
+bitgen -intstyle ise -f MIPSTopLevel.ut MIPSTopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.xst" -ofn "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.syr" 

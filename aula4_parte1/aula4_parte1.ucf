@@ -1,0 +1,6 @@
+NET "reset" LOC = "B18";
+NET "start" LOC = "D18";
+NET "isParBit" LOC = "G18";
+NET "inputBit" LOC = "H18";
+NET "clk" LOC = "B8";
+NET "parError" LOC = "J14";

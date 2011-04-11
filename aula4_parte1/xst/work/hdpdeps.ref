@@ -1,0 +1,13 @@
+V3 7
+FL C:/Users/rafa/CR/aula4_parte1/aula4_parte1.vhd 2011/03/14.13:45:00 M.81d
+EN work/aula4_parte1 1300110311 FL C:/Users/rafa/CR/aula4_parte1/aula4_parte1.vhd \
+      PB ieee/std_logic_1164 1290154108
+AR work/aula4_parte1/Behavioral 1300110312 \
+      FL C:/Users/rafa/CR/aula4_parte1/aula4_parte1.vhd EN work/aula4_parte1 1300110311 \
+      CP ClkDivider50M
+FL C:/Users/rafa/Downloads/ClkDivider50M.vhd 2011/03/14.13:38:47 M.81d
+EN work/ClkDivider50M 1300110309 FL C:/Users/rafa/Downloads/ClkDivider50M.vhd \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 \
+      PB ieee/STD_LOGIC_UNSIGNED 1290154110
+AR work/ClkDivider50M/RTL 1300110310 \
+      FL C:/Users/rafa/Downloads/ClkDivider50M.vhd EN work/ClkDivider50M 1300110309

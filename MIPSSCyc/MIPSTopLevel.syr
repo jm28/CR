@@ -1,0 +1,880 @@
+Release 12.4 - xst M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: MIPSTopLevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPSTopLevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPSTopLevel"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : MIPSTopLevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/MIPSPack.vhd" in Library work.
+Architecture mipspack of Entity mipspack is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/RegN.vhd" in Library work.
+Architecture rtl of Entity regn is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/AdderN.vhd" in Library work.
+Architecture rtl of Entity addern is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/ROM_AR.vhd" in Library work.
+Architecture rtl of Entity rom_ar is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/Mux2N.vhd" in Library work.
+Architecture rtl of Entity mux2n is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/D_MEM.vhd" in Library work.
+Entity <d_mem> compiled.
+Entity <d_mem> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/ControlUnit.vhd" in Library work.
+Architecture rtl of Entity controlunit is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/RegBank32_32.vhd" in Library work.
+Architecture rtl of Entity regbank32_32 is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/SignExt.vhd" in Library work.
+Architecture rtl of Entity signext is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/ALU32.vhd" in Library work.
+Architecture rtl of Entity alu32 is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/LeftShifter2.vhd" in Library work.
+Architecture rtl of Entity leftshifter2 is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/AndGate2.vhd" in Library work.
+Architecture rtl of Entity andgate2 is up to date.
+Compiling vhdl file "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.vhd" in Library work.
+Architecture rtl of Entity mipstoplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MIPSTopLevel> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <RegN> in library <work> (architecture <RTL>) with generics.
+	resetValue = "00000000010000000000000000000000"
+	size = 32
+
+Analyzing hierarchy for entity <AdderN> in library <work> (architecture <RTL>) with generics.
+	size = 32
+
+Analyzing hierarchy for entity <ROM_AR> in library <work> (architecture <RTL>) with generics.
+	addrBusSize = 6
+	dataBusSize = 32
+
+Analyzing hierarchy for entity <Mux2N> in library <work> (architecture <RTL>) with generics.
+	size = 32
+
+Analyzing hierarchy for entity <D_MEM> in library <work> (architecture <RTL>) with generics.
+	n_words = 64
+	size_words = 32
+
+Analyzing hierarchy for entity <ControlUnit> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <Mux2N> in library <work> (architecture <RTL>) with generics.
+	size = 5
+
+Analyzing hierarchy for entity <RegBank32_32> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <SignExt> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <ALU32> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <LeftShifter2> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <AndGate2> in library <work> (architecture <RTL>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MIPSTopLevel> in library <work> (Architecture <rtl>).
+WARNING:Xst:753 - "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.vhd" line 55: Unconnected output port 'carryOut' of component 'AdderN'.
+WARNING:Xst:753 - "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.vhd" line 138: Unconnected output port 'carryOut' of component 'AdderN'.
+Entity <MIPSTopLevel> analyzed. Unit <MIPSTopLevel> generated.
+
+Analyzing generic Entity <RegN> in library <work> (Architecture <RTL>).
+	resetValue = "00000000010000000000000000000000"
+	size = 32
+Entity <RegN> analyzed. Unit <RegN> generated.
+
+Analyzing generic Entity <AdderN> in library <work> (Architecture <RTL>).
+	size = 32
+Entity <AdderN> analyzed. Unit <AdderN> generated.
+
+Analyzing generic Entity <ROM_AR> in library <work> (Architecture <RTL>).
+	addrBusSize = 6
+	dataBusSize = 32
+Entity <ROM_AR> analyzed. Unit <ROM_AR> generated.
+
+Analyzing generic Entity <Mux2N.1> in library <work> (Architecture <RTL>).
+	size = 32
+Entity <Mux2N.1> analyzed. Unit <Mux2N.1> generated.
+
+Analyzing generic Entity <D_MEM> in library <work> (Architecture <RTL>).
+	n_words = 64
+	size_words = 32
+WARNING:Xst:790 - "C:/Users/rafa/Downloads/MIPSSCyc/D_MEM.vhd" line 48: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <s_memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "C:/Users/rafa/Downloads/MIPSSCyc/D_MEM.vhd" line 56: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <s_memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:819 - "C:/Users/rafa/Downloads/MIPSSCyc/D_MEM.vhd" line 53: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <s_memory>
+Entity <D_MEM> analyzed. Unit <D_MEM> generated.
+
+Analyzing Entity <ControlUnit> in library <work> (Architecture <RTL>).
+Entity <ControlUnit> analyzed. Unit <ControlUnit> generated.
+
+Analyzing generic Entity <Mux2N.2> in library <work> (Architecture <RTL>).
+	size = 5
+Entity <Mux2N.2> analyzed. Unit <Mux2N.2> generated.
+
+Analyzing Entity <RegBank32_32> in library <work> (Architecture <RTL>).
+Entity <RegBank32_32> analyzed. Unit <RegBank32_32> generated.
+
+Analyzing Entity <SignExt> in library <work> (Architecture <RTL>).
+Entity <SignExt> analyzed. Unit <SignExt> generated.
+
+Analyzing Entity <ALU32> in library <work> (Architecture <RTL>).
+Entity <ALU32> analyzed. Unit <ALU32> generated.
+
+Analyzing Entity <LeftShifter2> in library <work> (Architecture <RTL>).
+Entity <LeftShifter2> analyzed. Unit <LeftShifter2> generated.
+
+Analyzing Entity <AndGate2> in library <work> (Architecture <RTL>).
+Entity <AndGate2> analyzed. Unit <AndGate2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <RegN>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/RegN.vhd".
+    Found 32-bit register for signal <dataOut>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <RegN> synthesized.
+
+
+Synthesizing Unit <AdderN>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/AdderN.vhd".
+    Found 33-bit adder carry in for signal <s_result>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <AdderN> synthesized.
+
+
+Synthesizing Unit <ROM_AR>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/ROM_AR.vhd".
+    Found 64x32-bit ROM for signal <data$rom0000> created at line 43.
+    Summary:
+	inferred   1 ROM(s).
+Unit <ROM_AR> synthesized.
+
+
+Synthesizing Unit <Mux2N_1>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/Mux2N.vhd".
+Unit <Mux2N_1> synthesized.
+
+
+Synthesizing Unit <D_MEM>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/D_MEM.vhd".
+WARNING:Xst:647 - Input <address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64x32-bit single-port RAM <Mram_s_memory> for signal <s_memory>.
+WARNING:Xst:737 - Found 32-bit latch for signal <read_data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+Unit <D_MEM> synthesized.
+
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/ControlUnit.vhd".
+Unit <ControlUnit> synthesized.
+
+
+Synthesizing Unit <Mux2N_2>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/Mux2N.vhd".
+Unit <Mux2N_2> synthesized.
+
+
+Synthesizing Unit <RegBank32_32>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/RegBank32_32.vhd".
+    Found 32x32-bit dual-port RAM <Mram_s_memory> for signal <s_memory>.
+    Found 32x32-bit dual-port RAM <Mram_s_memory_ren> for signal <s_memory>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <RegBank32_32> synthesized.
+
+
+Synthesizing Unit <SignExt>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/SignExt.vhd".
+Unit <SignExt> synthesized.
+
+
+Synthesizing Unit <ALU32>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/ALU32.vhd".
+    Found 32-bit addsub for signal <s_result$addsub0000>.
+    Found 32-bit comparator less for signal <s_result$cmp_lt0000> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <ALU32> synthesized.
+
+
+Synthesizing Unit <LeftShifter2>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/LeftShifter2.vhd".
+WARNING:Xst:647 - Input <dataIn<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <LeftShifter2> synthesized.
+
+
+Synthesizing Unit <AndGate2>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/AndGate2.vhd".
+Unit <AndGate2> synthesized.
+
+
+Synthesizing Unit <MIPSTopLevel>.
+    Related source file is "C:/Users/rafa/Downloads/MIPSSCyc/MIPSTopLevel.vhd".
+Unit <MIPSTopLevel> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port RAM                               : 2
+ 64x32-bit single-port RAM                             : 1
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 3
+ 32-bit addsub                                         : 1
+ 33-bit adder carry in                                 : 2
+# Registers                                            : 1
+ 32-bit register                                       : 1
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <D_MEM>.
+INFO:Xst:3031 - HDL ADVISOR - The RAM <Mram_s_memory> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <MemWrite>      | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <write_data>    |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <D_MEM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RegBank32_32>.
+INFO:Xst:3031 - HDL ADVISOR - The RAM <Mram_s_memory> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <writeClk>      | rise     |
+    |     weA            | connected to signal <writeEnable>   | high     |
+    |     addrA          | connected to signal <writeRegIndex> |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <readRegIndex0> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3031 - HDL ADVISOR - The RAM <Mram_s_memory_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <writeClk>      | rise     |
+    |     weA            | connected to signal <writeEnable>   | high     |
+    |     addrA          | connected to signal <writeRegIndex> |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <readRegIndex1> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RegBank32_32> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port distributed RAM                   : 2
+ 64x32-bit single-port distributed RAM                 : 1
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 3
+ 32-bit addsub                                         : 1
+ 33-bit adder carry in                                 : 2
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MIPSTopLevel> ...
+
+Optimizing unit <RegN> ...
+
+Optimizing unit <RegBank32_32> ...
+
+Optimizing unit <ALU32> ...
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory1> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory2> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory3> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory4> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory5> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory6> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory7> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory8> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory9> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory10> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory11> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory12> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory15> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory13> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory14> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory16> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory17> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory18> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory19> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory20> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory21> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory22> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory23> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory24> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory25> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory26> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory27> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory28> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory29> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory32> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory30> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory31> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory33> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory34> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory35> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory36> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory37> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory38> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory39> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory40> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory41> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory42> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory43> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory44> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory45> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory46> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory49> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory47> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory48> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory50> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory51> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory52> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory53> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory54> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory55> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory56> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory57> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory58> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory59> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory60> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory61> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory62> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory63> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/Mram_s_memory64> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_0> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_1> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_2> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_3> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_4> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_5> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_6> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_7> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_8> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_9> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_10> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_11> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_12> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_13> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_14> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_15> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_16> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_17> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_18> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_19> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_20> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_21> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_22> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_23> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_24> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_25> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_26> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_27> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_28> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_29> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_30> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <data_memory/read_data_31> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_31> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_30> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_29> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_28> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_27> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_26> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_25> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_24> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_23> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_22> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_21> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_20> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_19> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_18> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_17> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_16> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_15> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_14> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_13> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_12> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_11> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_10> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_9> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_8> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_1> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc/dataOut_0> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren64> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren62> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren61> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren63> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren59> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren58> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren60> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren56> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren55> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren57> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren53> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren52> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren54> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren50> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren49> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren51> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren47> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren46> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren48> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren44> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren43> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren45> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren41> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren40> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren42> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren38> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren37> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren39> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren35> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren34> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren36> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren32> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren31> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren33> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren29> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren28> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren30> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren26> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren25> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren27> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren23> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren22> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren24> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren20> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren19> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren21> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren17> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren16> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren18> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren14> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren13> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren15> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren11> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren10> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren12> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren8> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren7> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren9> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren5> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren4> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren6> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren3> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren2> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory_ren1> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory64> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory62> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory61> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory63> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory59> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory58> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory60> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory56> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory55> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory57> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory53> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory52> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory54> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory50> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory49> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory51> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory47> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory46> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory48> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory44> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory43> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory45> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory41> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory40> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory42> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory38> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory37> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory39> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory35> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory34> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory36> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory32> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory31> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory33> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory29> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory28> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory30> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory26> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory25> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory27> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory23> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory22> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory24> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory20> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory19> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory21> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory17> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory16> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory18> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory14> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory13> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory15> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory11> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory10> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory12> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory8> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory7> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory9> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory5> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory4> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory6> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory3> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory2> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <reg_bank/Mram_s_memory1> of sequential type is unconnected in block <MIPSTopLevel>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIPSTopLevel, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MIPSTopLevel.ngr
+Top Level Output File Name         : MIPSTopLevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 21
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 5
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      MUXCY                       : 5
+#      VCC                         : 1
+#      XORCY                       : 6
+# FlipFlops/Latches                : 6
+#      FDR                         : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        4  out of   4656     0%  
+ Number of Slice Flip Flops:              6  out of   9312     0%  
+ Number of 4 input LUTs:                  8  out of   9312     0%  
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    232     1%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 6     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.670ns (Maximum Frequency: 272.480MHz)
+   Minimum input arrival time before clock: 2.798ns
+   Maximum output required time after clock: 6.737ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.670ns (frequency: 272.480MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               3.670ns (Levels of Logic = 6)
+  Source:            pc/dataOut_3 (FF)
+  Destination:       pc/dataOut_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pc/dataOut_3 to pc/dataOut_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  pc/dataOut_3 (pc/dataOut_3)
+     LUT1:I0->O            1   0.704   0.000  pc4_adder/Madd_s_result_cy<3>_rt (pc4_adder/Madd_s_result_cy<3>_rt)
+     MUXCY:S->O            1   0.464   0.000  pc4_adder/Madd_s_result_cy<3> (pc4_adder/Madd_s_result_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  pc4_adder/Madd_s_result_cy<4> (pc4_adder/Madd_s_result_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  pc4_adder/Madd_s_result_cy<5> (pc4_adder/Madd_s_result_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  pc4_adder/Madd_s_result_cy<6> (pc4_adder/Madd_s_result_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  pc4_adder/Madd_s_result_xor<7> (s_pcNext<7>)
+     FDR:D                     0.308          pc/dataOut_7
+    ----------------------------------------
+    Total                      3.670ns (3.048ns logic, 0.622ns route)
+                                       (83.1% logic, 16.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              2.798ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       pc/dataOut_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to pc/dataOut_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.669  reset_IBUF (reset_IBUF)
+     FDR:R                     0.911          pc/dataOut_7
+    ----------------------------------------
+    Total                      2.798ns (2.129ns logic, 0.669ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 1
+-------------------------------------------------------------------------
+Offset:              6.737ns (Levels of Logic = 3)
+  Source:            pc/dataOut_5 (FF)
+  Destination:       error (PAD)
+  Source Clock:      clk rising
+
+  Data Path: pc/dataOut_5 to error
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  pc/dataOut_5 (pc/dataOut_5)
+     LUT3:I0->O            1   0.704   0.424  ctrl_unit/rsvdInst_SW0 (N11)
+     LUT4:I3->O            1   0.704   0.420  ctrl_unit/rsvdInst (error_OBUF)
+     OBUF:I->O                 3.272          error_OBUF (error)
+    ----------------------------------------
+    Total                      6.737ns (5.271ns logic, 1.466ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.03 secs
+ 
+--> 
+
+Total memory usage is 217416 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  258 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
